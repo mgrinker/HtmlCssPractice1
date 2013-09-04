@@ -3,10 +3,60 @@
     <head>
         <title>HTML form with embedded CSS</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+           body{
+                width: 900px;
+                margin: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            h1{
+                text-align: center;
+                color: red;
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+            #content{
+                width: 800px;
+                margin: auto;
+                border: 2px solid black;
+                padding: 20px;
+            }
+            table{
+                width: 600px;
+                margin: auto;
+                border: 2px dashed red;
+                padding: 10px;
+            }
+            td{
+                padding: 3px;
+                font-size: 20px;
+            }
+            #male{
+                color: blue;
+            }
+            #female{
+                color: pink;
+            }
+            #blue{
+                color: blue;
+            }
+            #brown{
+                color: brown;
+            }
+            #green{
+                color: green;
+            }
+            .button{
+                background-color: red;
+                color: yellow;
+                font-size: 25px;
+            } 
+        </style>
     </head>
     <body>
         <div id="content">
-            <h1>Form with CSS Styles</h1>
+            <h1>Form with embedded CSS Styles</h1>
             <form id="form1" name="form1" action="" method="get">
                 <table>
                     <tr>
@@ -23,15 +73,15 @@
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
-                        <td><label>Male<input type="radio" name="gender" value="male" id="gender_0"></label>
-                            <label>Female<input type="radio" name="gender" value="female" id="gender_1"></label>
+                        <td><label id="male">Male<input type="radio" name="gender" value="male" id="gender_0"></label>
+                            <label id="female">Female<input type="radio" name="gender" value="female" id="gender_1"></label>
                         </td>
                     </tr>
                     <tr>
                         <td><label>Eye Color</label></td>
-                        <td><label>Blue<input type="radio" name="eyeColor" value="blue" id="eyeColor_0"></label>
-                            <label>Brown<input type="radio" name="eyeColor" value="brown" id="eyeColor_1"></label>
-                            <label>Green<input type="radio" name="eyeColor" value="green" id="eyeColor_2"></label>
+                        <td><label id="blue">Blue<input type="radio" name="eyeColor" value="blue" id="eyeColor_0"></label>
+                            <label id="brown">Brown<input type="radio" name="eyeColor" value="brown" id="eyeColor_1"></label>
+                            <label id="green">Green<input type="radio" name="eyeColor" value="green" id="eyeColor_2"></label>
                             <label>Other<input type="radio" name="eyeColor" value="other" id="eyeColor_3"></label>
                         </td>
                     </tr>
@@ -83,12 +133,12 @@
                         <td><textarea name="favoriteMovie" cols="20" rows="5">&nbsp;</textarea></td>
                     </tr>
                     <tr>
-                        <td><input name="submit" type="button" value="Submit"></td>
+                        <td><input class="button" name="submit" type="button" value="Submit"></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><input name="reset" type="button" value="Reset"></td>
-                        <td><input name="exit" type="button" value="Exit"></td>
+                        <td><input class="button" name="reset" type="button" value="Reset"></td>
+                        <td><input class="button" name="exit" type="button" value="Exit"></td>
                     </tr>
                 </table>
             </form>
