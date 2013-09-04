@@ -1,94 +1,169 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>HTML form with inline CSS</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body>
-        <div id="content">
-            <h1>Form with CSS Styles</h1>
+    
+    <body style="width: 900px; margin: auto; padding-top: 50px;padding-bottom: 50px">
+        <div id="content" style="width: 800px; margin: auto;
+             border: 2px solid black; padding: 20px">
+            
+            <h1 style="text-align: center; color: red; margin: 0px;
+                margin-bottom: 20px">Form with inline CSS Styles</h1>
+                
             <form id="form1" name="form1" action="" method="get">
-                <table>
+                
+                <table style="width: 600px; margin: auto; border: 2px dashed red;
+                       padding: 10px">
+                    
                     <tr>
-                        <td><label>First Name</label></td>
-                        <td><input type="text" name="firstName"</td>
-                    </tr>
-                    <tr>
-                        <td><label>Last Name</label></td>
-                        <td><input type="text" name="lastName"</td>
-                    </tr>
-                    <tr>
-                        <td><label>Age</label></td>
-                        <td><input type="text" name="age"</td>
-                    </tr>
-                    <tr>
-                        <td><label>Gender</label></td>
-                        <td><label>Male<input type="radio" name="gender" value="male" id="gender_0"></label>
-                            <label>Female<input type="radio" name="gender" value="female" id="gender_1"></label>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>First Name</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <input type="text" name="firstName"
                         </td>
                     </tr>
+                    
                     <tr>
-                        <td><label>Eye Color</label></td>
-                        <td><label>Blue<input type="radio" name="eyeColor" value="blue" id="eyeColor_0"></label>
-                            <label>Brown<input type="radio" name="eyeColor" value="brown" id="eyeColor_1"></label>
-                            <label>Green<input type="radio" name="eyeColor" value="green" id="eyeColor_2"></label>
-                            <label>Other<input type="radio" name="eyeColor" value="other" id="eyeColor_3"></label>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Last Name</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <input type="text" name="lastName"
                         </td>
                     </tr>
+                    
                     <tr>
-                        <td><label>Pick Your Favorite Food Types</label></td>
-                        <td><p>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Age</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <input type="text" name="age"
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Gender</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label style="color: blue">Male<input type="radio"
+                                    name="gender" value="male" id="gender_0">
+                            </label>
+                            <label style="color: pink">Female<input type="radio" 
+                                    name="gender" value="female" id="gender_1">
+                            </label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Eye Color</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label style="color: blue">Blue<input type="radio" 
+                                    name="eyeColor" value="blue" id="eyeColor_0">
+                            </label>
+                            <label style="color: brown">Brown<input type="radio" 
+                                    name="eyeColor" value="brown" id="eyeColor_1">
+                            </label>
+                            <label style="color: green">Green<input type="radio" 
+                                    name="eyeColor" value="green" id="eyeColor_2">
+                            </label>
+                            <label>Other<input type="radio" name="eyeColor" 
+                                    value="other" id="eyeColor_3">
+                            </label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Pick Your Favorite Food Types</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px"><p>
                               <label>
-                                <input type="checkbox" name="FavoriteFood" value="mexican" id="FavoriteFood_0">
+                                <input type="checkbox" name="FavoriteFood" 
+                                       value="mexican" id="FavoriteFood_0">
                                 Mexican</label>
                               <br>
                               <label>
-                                <input type="checkbox" name="FavoriteFood" value="american" id="FavoriteFood_1">
+                                <input type="checkbox" name="FavoriteFood" 
+                                       value="american" id="FavoriteFood_1">
                                 American</label>
                               <br>
                               <label>
-                                <input type="checkbox" name="FavoriteFood" value="italian" id="FavoriteFood_2">
+                                <input type="checkbox" name="FavoriteFood" 
+                                       value="italian" id="FavoriteFood_2">
                                 Italian</label>
                               <br>
                               <label>
-                                <input type="checkbox" name="FavoriteFood" value="french" id="FavoriteFood_3">
+                                <input type="checkbox" name="FavoriteFood" 
+                                       value="french" id="FavoriteFood_3">
                                 French</label>
                               <br>
                             </p>
                         </td>
                     </tr>
+                    
                     <tr>
-                        <td><label>What kind of vehicle do you use</label></td>
-                        <td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>What kind of vehicle do you use</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
                             <select name="vehicle">
                               <option value="car" selected>Car</option>
                               <option value="van">Van</option>
                               <option value="motorcycle">Motorcycle</option>
                               <option value="suv">SUV</option>
                               <option value="bicycle">Bicycle</option>
-                            </select></td>
+                            </select>
+                        </td>
                     </tr>
+                    
                     <tr>
-                        <td><label>How many computers do you own</label></td>
-                        <td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>How many computers do you own</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
                             <select name="computer">
                               <option value="1" selected>1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
                               <option value="4">4</option>
-                            </select></td>
+                            </select>
+                        </td>
                     </tr>
+                    
                     <tr>
-                        <td><label>Describe your favorite movie</label></td>
-                        <td><textarea name="favoriteMovie" cols="20" rows="5">&nbsp;</textarea></td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <label>Describe your favorite movie</label>
+                        </td>
+                        <td style="padding: 3px; font-size: 20px">
+                            <textarea name="favoriteMovie" cols="20" rows="5">
+                            </textarea>
+                        </td>
                     </tr>
+                    
                     <tr>
-                        <td><input name="submit" type="button" value="Submit"></td>
+                        <td>
+                            <input style="background-color: red; color: yellow;
+                                   font-size: 25px" name="submit" type="button"
+                                   value="Submit">
+                        </td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><input name="reset" type="button" value="Reset"></td>
-                        <td><input name="exit" type="button" value="Exit"></td>
+                        <td><input style="background-color: red; color: yellow;
+                                   font-size: 25px" name="reset" type="button" 
+                                   value="Reset">
+                        </td>
+                        <td><input style="background-color: red; color: yellow;
+                                   font-size: 25px" name="exit" type="button" 
+                                   value="Exit">
+                        </td>
                     </tr>
                 </table>
             </form>
